@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_actionbar"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tvTodoHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:includeFontPadding="false"
+        android:text="@+id/tvTodoHour"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvTodoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvTodoHour"
+        android:layout_below="@+id/tvTodoHour"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="@+id/tvTodoName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#8FBE00"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="@string/timeline"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvTodoDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/timeline_date"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="1dp"
+        android:background="#00a2ff" />
+
+    <ListView
+        android:id="@+id/lvTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

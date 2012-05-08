@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlFilterContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/filter_dialog"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <View
+            android:id="@+id/vSeparator1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvFilter"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/tvFilterType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vSeparator1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/filter_per_type"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/lvPOITypes"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/tvFilterType" />
+
+        <View
+            android:id="@+id/vSeparator2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lvPOITypes"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/tvFilterPopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vSeparator2"
+            android:layout_marginTop="8dp"
+            android:text="@string/filter_per_popularity"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/rbFilterRating"
+            style="@style/filterRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFilterPopularity"
+            android:numStars="4"
+            android:rating="1"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vSeparator3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rlFilterContent"
+        android:background="@color/gray_light" />
+
+    <Button
+        android:id="@+id/bPOIFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/vSeparator3"
+        android:background="@drawable/button_gray"
+        android:text="@string/filter"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

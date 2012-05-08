@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Naonod" parent="android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background_holo</item>
+    </style>
+
+    <style name="filterRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">34dip</item>
+        <item name="android:maxHeight">34dip</item>
+    </style>
+
+</resources>

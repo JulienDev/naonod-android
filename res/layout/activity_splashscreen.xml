@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_about" />
+
+    <FrameLayout
+        android:id="@+id/add"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:antialias="true"
+            android:background="@drawable/bg_naonod_com" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/about_find_us_on_naonod_com"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </FrameLayout>
+
+</LinearLayout>

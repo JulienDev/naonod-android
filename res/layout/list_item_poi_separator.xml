@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/separator"
+    android:paddingLeft="6dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp" android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvPOIType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="@+id/tvPOIType"
+        android:textColor="#ffffff"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textSize="16dp" />
+
+</LinearLayout>

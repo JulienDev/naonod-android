@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/llMapTimeline"
+        layout="@layout/activity_map_timeline" />
+
+    <include
+        android:id="@+id/llMapContent"
+        layout="@layout/activity_map_content" />
+
+</RelativeLayout>

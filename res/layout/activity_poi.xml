@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00a2ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" >
+
+        <RadioGroup
+            android:id="@+id/rgPOIFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rPOIDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/poi_details" />
+
+            <RadioButton
+                android:id="@+id/rPOIComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/poi_comments" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/ibPOIAddTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_actionbar"
+            android:padding="6dp"
+            android:src="@drawable/actionbar_add" />
+
+        <ImageButton
+            android:id="@+id/ibPOIDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_actionbar"
+            android:padding="6dp"
+            android:src="@drawable/actionbar_directions" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flPOI"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

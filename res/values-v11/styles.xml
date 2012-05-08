@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Naonod" parent="android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

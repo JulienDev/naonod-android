@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/flPOIType"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#FF0000" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPOIDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/flPOIType"
+        android:text="@+id/tvPOIDistance"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvPOIName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPOIDistance"
+        android:layout_below="@+id/tvPOIDistance"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@+id/tvPOIName"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/ivPOIRatingStar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/tvPOIRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivPOIRatingStar"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ivPOIRatingStar"
+        android:gravity="center_vertical"
+        android:text="@+id/tvPOIRating"
+        android:textSize="14dp" />
+
+</RelativeLayout>

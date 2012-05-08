@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00a2ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" >
+
+        <ImageButton
+            android:id="@+id/ibHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_actionbar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/actionbar_help" />
+
+        <View
+            android:id="@+id/vSeparator"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ibHelp"
+            android:background="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/ibPOIsMap"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/vSeparator"
+            android:background="@drawable/button_actionbar"
+            android:padding="8dp"
+            android:src="@drawable/actionbar_map" />
+
+        <ImageButton
+            android:id="@+id/ibPOISearch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/ibPOIsMap"
+            android:background="@drawable/button_actionbar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@drawable/actionbar_search" />
+
+        <ImageButton
+            android:id="@+id/ibListFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/ibPOISearch"
+            android:background="@drawable/button_actionbar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@drawable/actionbar_filter" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ibListFilter"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPOIsNb"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:background="#ffffff"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/lvPOIs"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fastScrollEnabled="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00a2ff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/ivTimeline"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_actionbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/actionbar_time" />
+
+            <TextView
+                android:id="@+id/todosCounter"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/pastille_shape"
+                android:paddingLeft="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff" />
+
+        <fr.naonod.view.component.HorizontalListView
+            android:id="@+id/hlvTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </fr.naonod.view.component.HorizontalListView>
+    </LinearLayout>
+
+</LinearLayout>

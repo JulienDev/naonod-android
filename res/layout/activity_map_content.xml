@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/ibTimeline"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_actionbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/actionbar_time" />
+
+            <TextView
+                android:id="@+id/todosCounter"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/pastille_shape"
+                android:paddingLeft="4dp"
+                android:paddingTop="0dp"
+                android:text="@+id/todosCounter"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ibMapFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_actionbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/actionbar_filter" />
+
+            <ImageButton
+                android:id="@+id/ibPOISearch"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_actionbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/actionbar_search" />
+
+            <ImageButton
+                android:id="@+id/ibListView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_actionbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/list" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/ibHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_actionbar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/actionbar_help" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMap"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="@string/api_key"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <View
+            android:id="@+id/contentOverlay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibGPSSearching"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llZoom"
+            android:layout_alignLeft="@+id/llZoom"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_map_overlay_list"
+            android:paddingBottom="6dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/map_overlay_gps" />
+
+        <LinearLayout
+            android:id="@+id/llZoom"
+            android:layout_width="37dp"
+            android:layout_height="81dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_map_overlay"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zoomIn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_map_overlay_blue_top"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#777777"
+                android:textSize="26sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/zoomOut"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_map_overlay_blue_bottom"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="-"
+                android:textColor="#777777"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llPOIContent"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button_actionbar"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ivPOINavigationNext"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvPOIRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@+id/tvPOIRating"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@android:drawable/btn_star_big_on" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/tvPOITitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivPOINavigationNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/navigation_next" />
+    </RelativeLayout>
+
+</LinearLayout>

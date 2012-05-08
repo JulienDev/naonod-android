@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Naonod</string>
+    
+    <!-- App Vars -->
+    <string name="api_url">http://nod.xionox.info/activities</string>
+    <string name="city_latitude">47.21849</string>
+    <string name="city_longitude">-1.5537</string>
+    <!-- Map API Debug Key -->
+	<string name="api_key">0aZG3J-qvklV4eNyTERVtY5TA7kKd7KE99nKauQ</string> 
+    <!-- Map API Release Key -->
+<!--     <string name="api_key">0aZG3J-qvklVT1gm8pxjRja-VE90cEBhU6LmUqA</string> -->
+    
+    <!-- About -->
+    <string name="about_find_us_on_naonod_com">Retrouvez-nous sur Naonod.com</string>
+    <string name="about_application_mobile_design">Application mobile &amp; Design</string>
+    <string name="about_julien"><font size="15">Julien Vermet</font><font size="11"> (ju.vermet@gmail.com)</font></string>
+    <string name="about_email_julien">ju.vermet@gmail.com</string>
+    <string name="about_website">Site internet</string>
+    <string name="about_thomas"><font size="15">Thomas Belin</font><font size="11"> (ThomasBelin4@gmail.com)</font></string>
+    <string name="about_email_thomas">ThomasBelin4@gmail.com</string>
+    <string name="about_backend">Backend</string>
+    <string name="about_arzhel"><font size="15">Arzhel Younsi</font>\n<font size="11">(xionox@gmail.com)</font></string>
+    <string name="about_email_arzhel">xionox@gmail.com</string>
+    <string name="about_jeremy"><font size="15">Jeremy Dagorn</font>\n<font size="11">    (jeremy.dagorn@gmail.com)</font></string>
+    <string name="about_email_jeremy">jeremy.dagorn@gmail.com</string>
+    <string name="about_contest">Application réalisée dans le cadre du concours</string>
+    <string name="about_nod_url">http://data.nantes.fr/</string>
+    <string name="about_write_us">Nous écrire</string>
+    
+    <!-- Timeline -->
+    <string name="timeline">Timeline</string>   
+    <string name="timeline_change_hour">Modifier l\'heure</string>
+    <string name="timeline_remove_activity">Supprimer l\'activité</string>
+    <string name="timeline_date">Date</string>
+        
+    <!-- POI Details -->
+    <string name="poi_description">Description</string>
+    <string name="poi_details">Détails</string>
+    <string name="poi_comments">Comment.</string>
+    
+    <!-- POI Types -->
+    <string name="poi_type_parks">Parcs</string>
+    <string name="poi_type_pubs">Bars</string>
+    <string name="poi_type_restaurants">Restaurants</string>
+    <string name="poi_type_culture">Culture</string>
+    
+    <!-- Search POI -->
+    <string name="poi_search_view_all_pois">Voir tous les points d\'interêt</string>
+    <string name="poi_search_find_activities">Trouver des activités</string>
+    <string name="poi_search_guide_me">Me guider</string>
+    
+    <!-- Filter -->
+    <string name="filter">Filtrer</string>
+    <string name="filter_dialog">Filtrer…</string>
+    <string name="filter_per_type">Par type</string>
+    <string name="filter_per_popularity">Par popularité</string>
+    
+    <!-- Other -->
+    <string name="are_you_sure_to_quit_app">Etes-vous sur de vouloir quitter l\'application?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="or">Ou</string>
+    <string name="and_amp">&amp;</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+</resources>
